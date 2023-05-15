@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Reset default styles for better consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set background image for desktop and tablets */
+        @media only screen and (min-width: 768px) {
+            body {
+                background: url('https://media.discordapp.net/attachments/1044799997717266452/1107691303778664521/20230515_082908.jpg?width=1082&height=610') no-repeat center top fixed;
+                background-size: cover;
+                background-position: center 75%; /* Crop 50% from the bottom */
+            }
+        }
+
+        /* Set background image for mobile */
+        @media only screen and (max-width: 767px) {
+            body {
+                background: url('https://media.discordapp.net/attachments/1044799997717266452/1107691376101048400/phone-01_1.jpg?width=282&height=610') no-repeat center center fixed;
+                background-size: cover;
+            }
+        }
+
+        /* Center the content vertically and horizontally */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2em;
+        }
+
+        /* Style for the content inside the container */
+        .content {
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+            line-height: 1.2;
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* Responsive styles for smaller screens */
+        @media only screen and (max-width: 480px) {
+            .container {
+                padding: 1em;
+            }
+            .content {
+                font-size: 2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+</body>
+</html>
