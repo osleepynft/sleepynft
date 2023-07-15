@@ -29,6 +29,11 @@
                 background-image-rendering: crisp-edges; /* Prevent image blurriness */
                 overflow: auto; /* Add scroll function */
             }
+            
+            /* Remove min-height from the container for scrolling */
+            .container {
+                min-height: auto;
+            }
         }
 
         /* Center the content vertically and horizontally */
@@ -36,7 +41,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             padding: 2em;
         }
 
