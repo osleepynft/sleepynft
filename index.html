@@ -27,20 +27,20 @@
                 background: url('https://media.discordapp.net/attachments/1044799997717266452/1107691376101048400/phone-01_1.jpg?width=282&height=610') no-repeat center center fixed;
                 background-size: cover;
                 background-image-rendering: crisp-edges; /* Prevent image blurriness */
-                overflow: auto; /* Add scroll function */
             }
             
-            /* Remove min-height from the container for scrolling */
-            .container {
-                min-height: auto;
+            /* Add wrapper for scrolling */
+            .scroll-wrapper {
+                overflow: auto;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
         /* Center the content vertically and horizontally */
         .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             padding: 2em;
         }
 
@@ -67,5 +67,13 @@
     </style>
 </head>
 <body>
+    <!-- Add scroll wrapper around the container -->
+    <div class="scroll-wrapper">
+        <div class="container">
+            <div class="content">
+                <!-- Your content here -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>
