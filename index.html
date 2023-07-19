@@ -18,15 +18,19 @@
                 background-size: cover;
                 background-position: center 75%; /* Crop 50% from the bottom */
                 background-image-rendering: pixelated; /* Prevent image blurriness */
+                
+                
+                
             }
         }
-
+        <div>
         /* Set background image for mobile */
         @media only screen and (max-width: 767px) {
             body {
                 background: url("sleepymobile.jpg") no-repeat center center fixed;
                 background-size: cover;
                 background-image-rendering: pixelated; /* Prevent image blurriness */
+                
             }
         }
 
@@ -62,51 +66,76 @@
         /* experimental top bar */
 
         .button:hover {
-            color: rgb(255, 255, 255);
-            transform: scale(1.1);
+			
+			color: rgb(255, 255, 255);
+			transform: scale(1.1);
             transition-duration: 1.5s;
-        }
+            
+			
+		}
 
-        .button {
-            background-color: rgba(220, 213, 200, 0.35);
-            border-radius: 10px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            margin-left: auto;
-            display: block;
-            margin-right: 50px;
-            width: 100px;
-            text-align: center;
-            font-family: monospace;
-            font-size: 20px;
-            float: right;
-            border: 10px;
-            text-decoration: none;
-            color: black;
-            transition: .5s;
+		.button {
+			background-color: rgba(220, 213, 200, 0.35);
+			border-radius: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+
+
+			margin-left: auto;
+			display: block;
+			margin-right: 50px;
+			width: 100px;
+
+			
+
+			text-align: center;
+
+
+
+
+
+			font-family: monospace;
+			font-size: 20px;
+
+
+
+			float: right;
+			border: 10px;
+
+			text-decoration: none;
+			color: black;
+
+			transition: .5s;
             -o-transition-delay: 3s;
-        }
+
+
+
+		}
+
+		
+        </div>
     </style>
 </head>
-<body>
-    <!-- Mobile Version -->
-    <div class="mobile-version">
-        <div class="container">
-            <div class="content">
-                <!-- Content for the mobile version here -->
-                <h1>This is the mobile version</h1>
-            </div>
-        </div>
-    </div>
 
-    <!-- Tablet and Desktop Version -->
-    <div class="tablet-desktop-version">
-        <div class="container">
-            <div class="content">
-                <!-- Content for the tablet and desktop version here -->
-                <h1>This is the tablet and desktop version</h1>
-            </div>
-        </div>
-    </div>
+
+<body>
+    
+    
+    
+	
+
+
+
+
+	
+
+	
+
+
+	
+
+
+
+
 </body>
 </html>
