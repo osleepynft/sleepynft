@@ -1,0 +1,48 @@
+.jobList {
+    background-color: var(--accent-color);
+    width: 597px;
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 25px 25px;
+    h3 {
+        font-weight: 800;
+        font-size: 20px;
+        color: var(--black-text);
+        margin-bottom: 5px;
+    }
+    p {
+        color: var(--black-text);
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .jobList{
+        width: 450px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobList{
+        width: 365px;
+        height: 65px;
+        padding: 10px 8px;
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .jobList {
+        width: 320px;
+        height: 60px;
+    }
+}

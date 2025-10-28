@@ -1,0 +1,107 @@
+:root {
+    --main-color: #0D0D0D;
+    --text-color: #ffffff;
+    --black-text: #000000;
+    --accent-color: rgba(188, 152, 247, 0.7);
+    --footer-accent: #8C34D9;
+    --accordion-bg: rgba(217, 217, 217, 0.1);
+    --accordion-tab: rgba(217, 217, 217, 0.4);
+    --music-player: rgba(85, 85, 85, 0.6);
+    --input-color: rgba(238, 224, 255, 0.8);
+    --team-members-bg: #3E3E3E;
+    --popup-bg: rgba(255, 255, 255, 0.8);
+    --loading-color: #BC98F7;
+    --mp-title: #757575;
+    --burger-bg: rgba(238, 238, 238, 0.1);
+    --burger-border: rgba(0, 0, 0, 0.5);
+    --header-bg: rgba(13, 13, 13, 0.5);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    font-weight: 400;
+}
+
+main {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+input {
+    padding: 0;
+    border: none;
+}
+
+.comingSoon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 1440px) {
+    .comingSoon {
+        justify-content: inherit;
+        img {
+            width: 900px;
+            height: auto;
+        }
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .comingSoon {
+        img {
+            width: 650px;
+        }
+    }
+    main {
+        /*margin-top: 100px;*/
+    }
+}
+
+@media (max-width: 768px) {
+    .comingSoon {
+        img {
+            width: 425px;
+        }
+    }
+}
+
+@media (max-width: 500px)  {
+    .comingSoon {
+        img {
+            width: 320px;
+        }
+    }
+}

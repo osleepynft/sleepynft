@@ -1,0 +1,25 @@
+.page {
+    padding-top: 150px;
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+        li {
+            margin-top: 36px;
+            transition: transform 0.2s ease;
+        }
+        li:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .page {
+        padding-top: 105px;
+        ul {
+            grid-template-columns: auto;
+        }
+    }
+}

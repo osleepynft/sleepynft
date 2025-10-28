@@ -1,0 +1,118 @@
+.accordion {
+    width: 100%;
+    max-width: 1080px;
+    padding: 37px 10px 37px 34px;
+    margin: 0 auto 208px auto;
+    background-color: var(--accordion-bg);
+    h3 {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--text-color);
+        font-weight: 800;
+        font-size: 40px;
+        padding-bottom: 12px;
+        margin-bottom: 48px;
+    }
+}
+
+.accordionItem {
+    margin-bottom: 15px;
+}
+
+.accordionItem:last-child {
+    margin-bottom: 15px;
+}
+
+.accordionItem h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--accordion-tab);
+    padding: 0 0 0 10px ;
+    margin-bottom: 10px;
+    cursor: pointer;
+    span {
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 28px;
+    }
+    img {
+        transform: rotate(-90deg);
+    }
+}
+
+.accordionItem p {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 1100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    span {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.show p {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.hide p {
+    height: 0;
+    opacity: 0;
+}
+
+.accordionItem h4 img {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease;
+}
+
+.accordionItem.show h4 img {
+    transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+    .accordion {
+        padding: 20px;
+        margin: 0 auto 100px auto;
+        h3 {
+            font-size: 28px;
+            padding-bottom: 12px;
+        }
+    }
+    .accordionItem h4 {
+        padding: 0 0 0 10px ;
+        margin-bottom: 10px;
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .accordionItem p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .accordion {
+        h3 {
+            font-size: 24px;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+        }
+    }
+    .accordionItem h4 {
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .accordionItem p {
+        font-size: 14px;
+    }
+}

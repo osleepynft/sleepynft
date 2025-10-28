@@ -1,0 +1,19 @@
+.teamCareerBtn {
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 36px;
+    padding: 11px 8px;
+    border-radius: 20px;
+    transition: transform 0.2s ease;
+}
+.teamCareerBtn:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 1024px) {
+    .teamCareerBtn {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,62 @@
+.headerIntro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.burger,
+.activeBurger {
+    background-color: var(--burger-bg);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    span {
+        position: absolute;
+        top: 0;
+        left: 8px;
+        width: 34px;
+        height: 3px;
+        background-color: var(--text-color);
+        transition: 0.2s ease;
+    }
+    span:nth-child(1) {
+        top: 16px;
+    }
+    span:nth-child(2) {
+        top: 24px;
+    }
+    span:nth-child(3) {
+        top: 32px;
+    }
+}
+.activeBurger {
+    span {
+        background-color: var(--black-text);
+    }
+    span:nth-child(1) {
+        top: 25px;
+        transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+        top: 24px;
+        opacity: 0;
+    }
+    span:nth-child(3) {
+        top: 25px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .logoImg {
+        width: 100px;
+        height: 100px;
+    }
+}

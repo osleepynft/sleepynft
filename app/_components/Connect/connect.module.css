@@ -1,0 +1,33 @@
+.connect {
+    display: flex;
+    justify-content: end;
+    button {
+        color: var(--text-color);
+        font-size: 24px;
+        font-weight: 700;
+        background-color: var(--accent-color);
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    button:hover {
+        transform: scale(1.02);
+    }
+
+    img {
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    img:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 1024px) {
+    .connect button {
+        font-size: 18px;
+        padding: 7px;
+    }
+}

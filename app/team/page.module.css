@@ -1,0 +1,43 @@
+.page {
+    padding-top: 150px;
+}
+
+.pageImg {
+    display: block;
+    margin: 0 auto 75px;
+}
+
+.memberInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 1024px) {
+    .page {
+        padding-top: 105px;
+    }
+
+    .pageImg {
+        width: 500px;
+        height: auto;
+    }
+
+    .memberInner {
+        gap: 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageImg {
+        width: 360px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pageImg {
+        width: 300px;
+    }
+}
