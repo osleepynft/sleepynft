@@ -4,7 +4,7 @@ import { PrivyProvider } from "@privy-io/react-auth";
 export default function Providers({ children }) {
   return (
     <PrivyProvider
-      appId={cmfy8bsft00d1js0dqaygn4uw}
+      appId={"cmfy8bsft00d1js0dqaygn4uw"}
       config={{
         appearance: {
           theme: "dark",
