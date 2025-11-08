@@ -59,7 +59,7 @@ export default function NavigationMobile({ toggleMenu, setToggleMenu }) {
                 </div>
                 <div className={styles.headerCopyItem}>
                     <span>SLEEPY INC, © 2025 </span>
-                    <Link href="mailto:hello@sleepynft.com">hello@sleepynft.com</Link>
+                    <Link href="mailto:hello@sleepy.lifestyle">hello@sleepy.lifestyle</Link>
                 </div>
             </div>
         </nav>
