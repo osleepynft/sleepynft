@@ -8,11 +8,11 @@ export default function Providers({ children }) {
       config={{
         appearance: {
           theme: "dark",
+          walletList: ['universal_profile'],
         },
+        loginMethods: ["wallet"],
         embeddedWallets: {
-          ethereum: {
-            createOnLogin: "users-without-wallets",
-          },
+          createOnLogin: "off",
         },
         walletConnect: false,
         defaultChain: {
